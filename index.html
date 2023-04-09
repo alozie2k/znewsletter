@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Digital Renaissance</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Variables CSS Files. Uncomment your preferred color scheme -->
+  <link href="assets/css/variables.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top" data-scrollto-offset="0">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+        <h1 style="margin-left: 30px;">Digital <span>Renaissance</span></h1>
+      </a>
+
+      <nav id="navbar" class="navbar" style="margin-right: 30px;">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html#hero-animated">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">News of the Days</a></li>
+          <li><a class="nav-link scrollto" href="index.html#services">Weekly News</a></li>
+          <li><a class="nav-link scrollto" href="index.html#portfolio">All News</a></li>
+          <li><a class="nav-link scrollto" href="index.html#footer">Subscribe</a></li>  
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle d-none"></i>
+      </nav>
+      <!-- .navbar -->   
+
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <section id="hero-animated" class="hero-animated d-flex align-items-center">
+    <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
+      <img src="assets/img/hero-carousel/hero-carousel-3.svg" class="img-fluid animated">
+      <h2>Welcome to <span>Digital Renaissance</span></h2>
+      <p>Revive Your Online Presence</p>
+
+
+      <div class="col-lg-4 col-md-6 footer-newsletter">
+        <form id="form1">
+          <input type="email" name="Email" placeholder="Enter your Email" required>
+          <input type="submit" value="Subscribe">
+        </form>
+        <span id="msg"></span>
+      </div>  
+
+      <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxHL9ieBZrLYZbVG1vwpzVVke295iiBQy-zKb11m6fg3rnYJAxxqLmIX1-sLwHhfc4n/exec'
+       const form1 = document.querySelector('#form1');
+       const msg = document.getElementById("msg")
+       
+
+form1.addEventListener('submit', e => {
+  e.preventDefault();
+  const formData = new FormData(form1);
+  fetch(scriptURL, { method: 'POST', body: formData })
+    .then(response => {
+      msg.innerHTML = "Thank you for subscribing!"
+      setTimeout(function(){
+        msg.innerHTML = ""
+      },5000)
+      form1.reset()
+    })
+    .catch(error => console.error('Error submitting form 1', error));
+});
+      </script>
+
+      
+      
+
+          <!--NewsLetter-->     
+
+    </div>
+  </section>
+
+  <main id="main">
+
+
+
+
+    <!-- ======= NEWS OF THE DAY SECTION ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>News of the Days</h2>
+          <p>Check out the most important highlight of the day</p>
+        </div>
+
+        <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-5">
+            <div class="about-img">
+              <img src="assets/img/bard.png" class="img-fluid" alt="" style="height: 650px;">
+            </div>
+          </div>
+
+          <!--CHANGE THE TITLE OF NEWS OF THE DAY HERE-->
+          <div class="col-lg-7">
+            <h3 class="pt-0 pt-lg-5"> Google lauches their own AI search engine</h3>
+
+           <!--CHANGE THE THREE SUBTITLES OF NEWS OF THE DAY HERE-->
+            <!-- Tabs -->
+            <ul class="nav nav-pills mb-3">
+              <li><a class="nav-link active" data-bs-toggle="pill" href="#tab1">Language model</a></li>
+              <li><a class="nav-link" data-bs-toggle="pill" href="#tab2">Development</a></li>
+              <li><a class="nav-link" data-bs-toggle="pill" href="#tab3">Powerful tool</a></li>
+            </ul>
+            <!-- End Tabs -->
+
+      
+            <!-- Tab Content -->
+            <div class="tab-content">
+
+
+              <!--FIRST SUBTITLE INFORMATION-->
+              <div class="tab-pane fade show active" id="tab1">
+                <p class="fst-italic">Google Bard is a large language model that can communicate and generate human-like text.</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>What is a large language model?</h4>
+                </div>
+                <p>A large language model is a type of artificial intelligence that can generate text that is similar to human-written text.
+                  Large language models are trained on massive amounts of text data, and they are able to learn the patterns of human language.
+                  This allows them to generate text that is both grammatically correct and semantically meaningful.</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>How does Google Bard work?</h4>
+                </div>
+                <p>Google Bard is a large language model that is trained on a massive dataset of text and code.
+                  This dataset includes books, articles, code, and other forms of text.
+                  Bard is able to use this dataset to generate text, translate languages, write different kinds 
+                  of creative content, and answer your questions in an informative way.</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>What are the benefits of using Google Bard?</h4>
+                </div>
+                <p>Google Bard can be used for a variety of tasks, including:
+                   Generating text: Bard can generate text that is similar to human-written text.
+                  Translating languages: Bard can translate languages from one to another.
+                  Writing creative content: Bard can write different kinds of creative content, such as poems, stories, and code.
+                  Answering questions: Bard can answer your questions in an informative way.</p>
+              </div>
+              <!-- End SUBTITLE INFORMATION 1 -->
+
+
+              <!--SECOND SUBTITLE INFORMATION-->
+              <div class="tab-pane fade show" id="tab2">
+                <p class="fst-italic">Google Bard is still under development, but it has the potential to revolutionize the way we interact with computers.</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>What is the status of Google Bard?</h4>
+                </div>
+                <p>Google Bard is still under development, and Google has not announced when it will be released to the public.
+                  However, Google has said that Bard is being trained on a massive dataset of text and code, and that it is able 
+                  to perform many kinds of tasks, including generating text, translating languages, writing different kinds of creative 
+                  content, and answering questions in an informative way.</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>What are the challenges of developing Google Bard?</h4>
+                </div>
+                <p>One of the challenges of developing Google Bard is that it is a very complex system.
+                  Bard needs to be able to understand human language, generate text, translate languages, and write different kinds of creative content.
+                  This is a very difficult task, and Google is still working on improving Bard's capabilities.</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>What are the potential benefits of Google Bard?</h4>
+                </div>
+                <p>Bard has the potential to revolutionize the way we interact with computers.
+                  Bard could be used to create new kinds of educational and entertainment experiences, and it could also be used to improve the way we work with information.
+                  For example, Bard could be used to help us write reports, create presentations, or even generate new ideas.</p>
+              </div>
+              <!-- End SUBTITLE INFORMATION 2 -->
+
+
+               <!--THIRD SUBTITLE INFORMATION-->
+              <div class="tab-pane fade show" id="tab3">
+                <p class="fst-italic">Google Bard is a powerful tool that can be used for a variety of tasks, including generating text, translating languages, and writing different kinds of creative content.</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>What are the capabilities of Google Bard?</h4>
+                </div>
+                <p>Google Bard is a powerful tool that can be used for a variety of tasks, including:
+                  Generating text: Bard can generate text that is similar to human-written text.
+                  Translating languages: Bard can translate languages from one to another.
+                  Writing creative content: Bard can write different kinds of creative content, such as poems, stories, and code.
+                  Answering questions: Bard can answer your questions in an informative way.</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>What are the limitations of Google Bard?</h4>
+                </div>
+                <p>Google Bard is still under development, and it has some limitations.
+                  For example, Bard can sometimes generate text that is not grammatically correct or semantically meaningful.
+                  Bard can also sometimes make mistakes when translating languages or writing creative content.</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>What are the ethical implications of using Google Bard?</h4>
+                </div>
+                <p>Google Bard is a powerful tool, and it is important to consider the ethical implications of using it.
+                  For example, Bard could be used to generate fake news or to spread misinformation.
+                  It is important to use Bard responsibly and to be aware of its limitations.
+                </p>
+              </div>
+              <!-- End SUBTITLE INFORMATION 3 -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+
+
+
+
+
+    <!-- ======= VIDEO SECTION INFORMATION ======= -->
+    <section id="onfocus" class="onfocus">
+      <div class="container-fluid p-0" data-aos="fade-up">
+
+        <div class="row g-0">
+          <div class="col-lg-6 video-play position-relative">
+            <a href="https://www.youtube.com/watch?v=yUKRkPKg5_U" class="glightbox play-btn"></a>
+          </div>
+          <div class="col-lg-6">
+            <div class="content d-flex flex-column justify-content-center h-100">
+              <h3>The New iPad: A Powerful and Versatile Tablet</h3>
+              <p class="fst-italic">
+                The new iPad is the perfect device for students, professionals, and anyone who wants a powerful and versatile tablet.
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> The new iPad features a powerful A15 Bionic chip that makes it fast and responsive.</li>
+                <li><i class="bi bi-check-circle"></i> It has an immersive Liquid Retina display that is perfect for watching movies, playing games, and browsing the web.</li>
+                <li><i class="bi bi-check-circle"></i> The new iPad also features a long-lasting battery that will keep you going all day long.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End OF VIDEO SECTION -->
+
+
+
+
+
+
+
+    <!-- ======= 6 CATEGORIES SECTION ======= -->
+    <section id="features" class="features">
+      <div class="container" data-aos="fade-up">
+
+        <!--6 CATEGORIES TITLES-->
+        <ul class="nav nav-tabs row gy-4 d-flex">
+
+           <!--CATEGORY 1-->
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+              <i class="bi bi-binoculars color-cyan"></i>
+              <h4>Expert systems</h4>
+            </a>
+          </li>
+          <!-- End OF CATEGORY 1 -->
+
+           <!--CATEGORY 2-->
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+              <i class="bi bi-box-seam color-indigo"></i>
+              <h4>Machine learning</h4>
+            </a>
+          </li>
+          <!-- End OF CATEGORY 2 -->
+
+           <!--CATEGORY 3-->
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+              <i class="bi bi-brightness-high color-teal"></i>
+              <h4>AGI</h4>
+            </a>
+          </li>
+          <!-- End OF CATEGORY 3 -->
+
+           <!--CATEGORY 4-->
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+              <i class="bi bi-command color-red"></i>
+              <h4>Computer vision</h4>
+            </a>
+          </li>
+          <!-- End OF CATEGORY 4 -->
+
+           <!--CATEGORY 5-->
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-5">
+              <i class="bi bi-easel color-blue"></i>
+              <h4>Robotics</h4>
+            </a>
+          </li>
+          <!-- End OF CATEGORY 5 -->
+
+           <!--CATEGORY 6-->
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-6">
+              <i class="bi bi-map color-orange"></i>
+              <h4>Game playing</h4>
+            </a>
+          </li>
+          <!-- End OF CATEGORY 6 -->
+
+        </ul>
+
+        <div class="tab-content">
+
+          <!--DESCRIPTION OF SECTION 1-->
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+                <h3>Expert systems</h3>
+                <p class="fst-italic">
+                  AI systems that use a set of rules to make decisions. They are often used in fields such as medicine and finance, where accuracy is critical.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> Expert systems are AI systems that use a set of rules to make decisions.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> They are often used in fields such as medicine and finance, where accuracy is critical.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Expert systems are typically rule-based, meaning that they make decisions by following a set of rules that have been programmed into them.</li>
+                </ul>
+                <p>
+                  Expert systems are a type of AI that is often used in fields where accuracy is critical. They work by following a set of rules that have been programmed into them.
+                </p>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/img/features-1.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <!-- End OF SECTION 1 DESCRIPTION -->
+
+           <!--DESCRIPTION OF SECTION 2-->
+          <div class="tab-pane" id="tab-2">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>Machine learning</h3>
+                <p class="fst-italic">
+                  Type of AI that allows systems to learn from data without being explicitly programmed. This is used in a variety of applications, such as spam filtering and facial recognition.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> Machine learning is a type of AI that allows systems to learn from data without being explicitly programmed.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> This is used in a variety of applications, such as spam filtering and facial recognition.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Machine learning algorithms are typically trained on a large amount of data. This data is used to create a model that can be used to make predictions or decisions.</li>
+                </ul>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-2.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <!-- End OF SECTION 2 DESCRIPTION -->
+
+
+           <!--DESCRIPTION OF SECTION 3-->
+          <div class="tab-pane" id="tab-3">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>AGI</h3>
+                <p>
+                  Hypothetical type of AI that would have the ability to perform any intellectual task that a human being can. AGI is often contrasted with "narrow" AI, which is designed to perform a specific task (e.g., playing chess or Go).
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> AGI is a hypothetical type of AI that would have the ability to perform any intellectual task that a human being can.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> AGI is often contrasted with "narrow" AI, which is designed to perform a specific task (e.g., playing chess or Go).</li>
+                  <li><i class="bi bi-check-circle-fill"></i> AGI is still a long way off, but it is a goal that many AI researchers are working towards.</li>
+                </ul>
+                <p class="fst-italic">
+                  AGI is a hypothetical type of AI that would have the ability to perform any intellectual task that a human being can. It is still a long way off, but it is a goal that many AI researchers are working towards.
+                </p>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-3.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <!-- End OF SECTION 3 DESCRIPTION -->
+
+           <!--DESCRIPTION OF SECTION 4-->
+          <div class="tab-pane" id="tab-4">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>Computer vision</h3>
+                <p class="fst-italic">
+                  Computer vision is a field of AI that deals with the extraction of information from digital images or videos. This is used in applications such as face recognition and object detection.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> This is used in applications such as face recognition and object detection.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Computer vision algorithms are typically used to identify objects, track their movements, and understand their relationships to each other.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Computer vision is a field of AI that deals with the extraction of information from digital images or videos.</li>
+                </ul>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-4.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <!-- End OF SECTION 4 DESCRIPTION -->
+
+           <!--DESCRIPTION OF SECTION 5-->
+          <div class="tab-pane" id="tab-5">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>Robotics</h3>
+                <p class="fst-italic">
+                  Robotics is a field of AI that deals with the design, construction, operation, and application of robots. Robots are used in a variety of industries, such as manufacturing and healthcare.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> Robotics is a field of AI that deals with the design, construction, operation, and application of robots.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Robots are used in a variety of industries, such as manufacturing and healthcare.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Robots are typically programmed to perform specific tasks, such as assembling products or providing medical care.</li>
+                </ul>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-5.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <!-- End OF SECTION 5 DESCRIPTION -->
+
+           <!--DESCRIPTION OF SECTION 6-->
+          <div class="tab-pane" id="tab-6">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>Game playing</h3>
+                <p class="fst-italic">
+                  Game playing is a field of AI that deals with the development of computer programs that can play games at a human-level or better. This is used in applications such as online gaming and artificial intelligence research.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> Game playing is a field of AI that deals with the development of computer programs that can play games at a human-level or better.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> This is used in applications such as online gaming and artificial intelligence research.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Game playing algorithms are typically used to develop strategies that can be used to win games.</li>
+                </ul>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-6.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <!-- End OF SECTION 6 DESCRIPTION -->
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End OF SECTION DESCRIPTION -->
+
+
+
+
+
+
+
+
+    <!-- ======= WEEKLY NEWS SECTION ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+      
+        <div class="section-header">
+          <h2>Weekly News</h2>
+          <p>Check out our Daily News</p>
+        </div>
+      
+        <div class="row gy-5">
+
+          <!--WEEKLY NEWS 1-->
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/med.jpeg" class="img-fluid" alt="" style="height: 310px;">
+              </div>
+              <div class="details position-relative" style="height: 250px;">
+                <div class="icon">
+                  <i class="bi bi-activity"></i>
+                </div>
+                <a href="blog1.html" class="stretched-link">
+                  <h3>AI used to create new drugs</h3>
+                </a>
+                <p>Researchers at the University of North Carolina have used AI to create a new drug that could be used to treat cancer.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End OF WEEKLY NEWS 1 -->
+
+          <!--WEEKLY NEWS 2-->
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/car.jpeg" class="img-fluid" alt="" style="height: 310px;">
+              </div>
+              <div class="details position-relative" style="height: 250px;">
+                <div class="icon">
+                  <i class="bi bi-broadcast"></i>
+                </div>
+                <a href="blog2.html" class="stretched-link">
+                  <h3>AI used to improve self-driving cars</h3>
+                </a>
+                <p>A team of researchers developed an AI system that can improve the safety of self-driving cars.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End OF WEEKLY NEWS 2 -->
+
+          <!--WEEKLY NEWS 3-->
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/news.jpeg" class="img-fluid" alt="" style="height: 310px;">
+              </div>
+              <div class="details position-relative" style="height: 250px;">
+                <div class="icon">
+                  <i class="bi bi-easel"></i>
+                </div>
+                <a href="blog3.html" class="stretched-link">
+                  <h3>AI used to detect fake news</h3>
+                </a>
+                <p>A team of researchers at the University of Washington has developed an AI system that can detect fake news.</p>
+              </div>
+            </div>
+            </div>
+            <!--End OF WEEKLY NEWS 3 -->
+
+          <!--WEEKLY NEWS 4-->
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/art.jpeg" class="img-fluid" alt="" style="height: 310px;">
+              </div>
+              <div class="details position-relative" style="height: 250px;">
+                <div class="icon">
+                  <i class="bi bi-bounding-box-circles"></i>
+                </div>
+                <a href="blog4.html" class="stretched-link">
+                  <h3>AI used to create art</h3>
+                </a>
+                <p>A team of researchers at Google AI has developed an AI system that can create art.</p>
+              </div>
+            </div>
+          </div>
+          <!-- END OF WEEKLY NEWS 4 -->
+
+          <!--WEEKLY NEWS 5-->
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/codee.jpeg" class="img-fluid" alt="" style="height: 310px;">
+              </div>
+              <div class="details position-relative" style="height: 250px;">
+                <div class="icon">
+                  <i class="bi bi-calendar4-week"></i>
+                </div>
+                <a href="blog5.html" class="stretched-link">
+                  <h3>AI used to write code</h3>
+                </a>
+                <p>A team of researchers at OpenAI has developed an AI system that can write code.</p>   
+              </div>
+            </div>
+          </div>
+          <!-- END OF WEEKLY NEWS 5 -->
+
+          <!--WEEKLY NEWS 6-->
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/dis.jpeg" class="img-fluid" alt="" style="height: 310px;">
+              </div>
+              <div class="details position-relative" style="height: 250px;">
+                <div class="icon">
+                  <i class="bi bi-chat-square-text"></i>
+                </div>
+                <a href="blog6.html" class="stretched-link">
+                  <h3>AI used to diagnose diseases</h3>
+                </a>
+                <p>A team of researchers at the University of Oxford has developed an AI system that can diagnose diseases.</p>
+              </div>
+            </div>
+          </div>
+          <!-- END OF WEEKLY NEWS 6 -->
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End OF WEEKLY NEWS SECTION -->
+
+
+ 
+
+
+
+    
+
+    <!-- ======= ALL NEWS SECTION ======= -->
+    <section id="portfolio" class="portfolio" data-aos="fade-up">
+
+      <div class="container">
+
+        <div class="section-header">
+          <h2>All News</h2>
+          <p>Check out all our news posts</p>
+        </div>
+
+      </div>
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
+
+          <!-- ALL NEWS FILTERS -->
+          <ul class="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-sys">Expert systems</li>
+            <li data-filter=".filter-machine">Machine learning</li>
+            <li data-filter=".filter-agi">AGI</li>
+            <li data-filter=".filter-vision">Computer vision</li>
+            <li data-filter=".filter-robot">Robotics</li>
+            <li data-filter=".filter-game">Game playing</li>
+          </ul>
+          <!-- END OF ALL NEWS FILTERS -->
+
+          <!--ALL NEWS FILTER ITEMS-->
+          <div class="row g-0 portfolio-container">
+
+             <!-- ALL NEWS FILTER ITEM 1 -->
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-sys">
+              <img src="assets/img/ibm.avif" class="img-fluid" alt="" style="height: 241px;">
+              <div class="portfolio-info">
+                <h4>IBM's Watson Helps Doctors Diagnose Cancer</h4>
+                <a href="assets/img/ibm.avif" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="allnews1.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+            <!-- End OF FILTER ITEM 1 -->
+
+            <!-- ALL NEWS FILTER ITEM 2 -->
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-machine">
+              <img src="assets/img/google.jpeg" class="img-fluid" alt="" style="height: 241px;">
+              <div class="portfolio-info">
+                <h4>Machine Learning Helps Google Translate More Languages</h4>
+                <a href="assets/img/portfolio/google.jpeg"  data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="allnews2.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+            <!-- End OF FILTER ITEM 2 -->
+
+            <!-- ALL NEWS FILTER ITEM 3 -->
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-agi">
+              <img src="assets/img/goo.jpg" class="img-fluid" alt="" style="height: 241px;">
+              <div class="portfolio-info">
+                <h4>Google's DeepMind Develops AI That Can Learn Like a Human</h4>
+                <a href="assets/img/goo.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="allnews3.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+            <!-- End OF FILTER ITEM 3 -->
+
+            <!-- ALL NEWS FILTER ITEM 4 -->
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-vision">
+              <img src="assets/img/car.jpeg" class="img-fluid" alt="" style="height: 241px;">
+              <div class="portfolio-info">
+                <h4>Self-Driving Cars Use Computer Vision to Avoid Collisions</h4>
+                <a href="assets/img/car.jpeg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="allnews4.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+            <!-- End OF FILTER ITEM 4 -->
+
+            <!-- ALL NEWS FILTER ITEM 5 -->
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-robot">
+              <img src="assets/img/robot.jpeg" class="img-fluid" alt="" style="height: 241px;">
+              <div class="portfolio-info">
+                <h4>Robots Used in Manufacturing to Improve Productivity</h4>
+                <a href="assets/img/robot.jpeg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="allnews5.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+            <!-- End OF FILTER ITEM 5 -->
+
+            <!-- ALL NEWS FILTER ITEM 6 -->
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-robot">
+              <img src="assets/img/chess.jpeg" class="img-fluid" alt="" style="height: 241px;">
+              <div class="portfolio-info">
+                <h4>Google's AlphaGo Defeats World Go Champion</h4>
+                <a href="assets/img/chess.jpeg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="allnews6.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+            <!-- End OF FILTER ITEM 6 -->
+
+          </div>
+          <!--END OF ALL NEWS ITEMS-->
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End OF ALL NEWS SECTION -->
+
+
+
+
+
+
+
+
+
+
+    <!-- ======= ABOUT AUTHOR SECTION ======= -->
+    <section id="faq" class="faq">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content px-xl-5">
+              <h3>Meet the <strong>Founder</strong></h3>
+              <p>
+                A brief introduction to the person behind the newsletter
+              </p>
+            </div>
+
+            <div class="accordion accordion-flush px-xl-5" id="faqlist">
+
+              <!-- ======= AUTHOR QUESTION 1 ======= -->
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    What inspired you to start this newsletter?
+                  </button>
+                </h3>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    I started this newsletter because I wanted to share my passion for technology with others. I believe that technology has the power to change the world for the better, and I want to help people learn more about it so that they can use it to make a positive impact.
+                  </div>
+                </div>
+              </div><!-- END OF AUTHOR QUESTION 1 -->
+
+              <!-- ======= AUTHOR QUESTION 2 ======= -->
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    What are my goals for this newsletter?
+                  </button>
+                </h3>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    My goals for this newsletter are to provide readers with valuable information about technology, to inspire them to use technology for good, and to connect with other people who are passionate about technology.
+                  </div>
+                </div>
+              </div>
+              <!-- END OF AUTHOR QUESTION 2 -->
+
+              <!-- ======= AUTHOR QUESTION 3 ======= -->
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    What can readers expect from my newsletter?
+                  </button>
+                </h3>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Readers can expect to receive informative articles about technology, as well as interviews with experts in the field. I also plan to include tips and advice on how to use technology in a way that is both productive and enjoyable.
+                  </div>
+                </div>
+              </div>
+              <!-- END OF AUTHOR QUESTION 3 -->
+
+              <!-- ======= AUTHOR QUESTION 4 ======= -->
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    What am I passionate about?
+                  </button>
+                </h3>
+                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    I am passionate about technology, education, and social justice. I believe that technology can be used to solve some of the world's most pressing problems, and I am committed to using my skills to make a positive impact.
+                  </div>
+                </div>
+              </div>
+              <!-- END OF AUTHOR QUESTION 4 -->
+
+               <!-- ======= AUTHOR QUESTION 5 ======= -->
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    What am I looking forward to in the future?
+                  </button>
+                </h3>
+                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    I am looking forward to continuing to grow this newsletter and to connecting with more people who share my passion for technology. I am also excited to see how technology will continue to evolve and change the world in the years to come.
+                  </div>
+                </div>
+              </div>
+              <!-- END OF AUTHOR QUESTION 5 -->
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/faq.jpg");'>&nbsp;</div>
+        </div>
+
+      </div>
+    </section><!-- End F.A.Q Section -->
+
+
+
+
+
+
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content">
+      <div class="container">
+        <div class="row">
+          
+      <div class="col-lg-4 col-md-6 footer-newsletter">
+        <h3><strong>Subscribe to stay updated with our latest news</strong></h3>
+        <form id="form2">
+          <input type="email" name="Email" placeholder="Enter your Email" required>
+          <input type="submit" value="Subscribe">
+        </form>
+        <span id="msg2"></span>
+      </div> 
+
+      <script>
+        const form2 = document.querySelector('#form2');
+        const msg2 = document.getElementById("msg2")
+        
+        form2.addEventListener('submit', e => {
+  e.preventDefault();
+  const formData = new FormData(form2);
+  fetch(scriptURL, { method: 'POST', body: formData })
+    .then(response => {
+      msg2.innerHTML = "Thank you for subscribing!"
+      setTimeout(function(){
+        msg2.innerHTML = ""
+      },5000)
+      form2.reset()
+    })
+    .catch(error => console.error('Error submitting form 2', error));
+});
+
+      </script>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal text-center">
+      <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div class="copyright">
+           Designed by <strong><a href="https://amandsonsoftware.com/"><span>AM&SON SOFTWARE SOLUTIONS LLC</span></a></strong>
+          </div>
+          
+        </div>
+
+        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+          <a href="https://twitter.com/" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="https://www.facebook.com/" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
